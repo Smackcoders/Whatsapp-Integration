@@ -1,0 +1,508 @@
+:root {
+    --primary: #5c3cfb;
+    --primary-hover: #4a2ddf;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --white: #ffffff;
+}
+
+.smack-modern-wrapper { 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    margin: 0;
+    color: var(--text-main);
+    position: relative;
+    /* background: var(--bg);  */
+    min-height: calc(100vh - 32px);
+}
+
+.smack-modern-header {
+    display: none; /* Hidden in favor of sidebar brand */
+}
+
+/* Override WordPress overflow that breaks sticky */
+#wpwrap,
+#wpcontent,
+#wpbody,
+#wpbody-content {
+    overflow: visible !important;
+}
+
+#wpcontent {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 782px) {
+    .smack-modern-header {
+        top: 46px !important;
+        margin-left: 0;
+        width: 100%;
+        padding: 12px 16px;
+    }
+}
+
+.header-content { display: flex; align-items: center; gap: 16px; }
+.header-icon-wrapper {
+    background: #25d366;
+    color: white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.header-icon-wrapper svg {
+    width: 28px;
+    height: 28px;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: column;
+}
+.title-group h1 {
+    margin: 0 !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+}
+.title-group p {
+    margin: 0 !important;
+    font-size: 0.875rem !important;
+    color: #6b7280 !important;
+    opacity: 1 !important;
+}
+
+/* User Actions Style */
+.header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.action-icon-btn {
+    background: #ffffff;
+    border: 1px solid #e3e8ee;
+    color: #4b5563;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+.action-icon-btn:hover {
+    background: #f8fafc;
+    color: #111827;
+    border-color: #cbd5e1;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 1px solid #e5e7eb;
+    padding-left: 16px;
+    cursor: pointer;
+}
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.profile-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #111827;
+}
+  
+.smack-modern-form {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Sidebar Layout Wrapper */
+.smack-settings-tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: calc(100vh - 32px);
+    background: #f8fafc;
+    border: none;
+    border-radius: 0;
+    margin-left: -20px;
+    width: calc(100% + 20px);
+}
+
+.smack-settings-tabs .smack-tabs-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    padding: 24px 16px;
+    margin-bottom: 0;
+}
+
+.smack-sidebar-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding-left: 8px; flex-shrink: 0; }
+.smack-sidebar-logo { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: #25d366; color: #ffffff; border-radius: 8px; font-size: 16px; font-weight: 800; flex-shrink: 0; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25); }
+.smack-sidebar-logo svg { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; margin: 0; }
+.smack-sidebar-title-wrap { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
+.smack-sidebar-title { font-size: 15px; font-weight: 700; color: #0f172a; letter-spacing: -0.01em; }
+.smack-sidebar-subtitle { font-size: 11px; color: #64748b; font-weight: 500; margin-top: 2px; }
+
+/* Main Content Area */
+.smack-main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    min-width: 0;
+    padding: 32px;
+    background: #f8fafc;
+}
+
+
+/* Tabs Navigation (overridden in sidebar layout but kept for safety) */
+.smack-tabs-nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 4px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.smack-tabs-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #475569;
+    border: none;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: background 0.15s ease, color 0.15s ease;
+    background: transparent;
+    line-height: 1.4;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.tab-btn svg.smack-tab-icon {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.tab-btn:hover {
+    color: #0f172a;
+    background: #f1f5f9;
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    background: #eff6ff;
+    font-weight: 600;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+/* Tab Panes */
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.smack-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+/* Tab Page Header (Audie Style) */
+.smack-tab-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.smack-tab-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.smack-tab-title-group h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.smack-tab-title-group p {
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 400;
+}
+
+/* Help Trigger */
+.help-trigger {
+    background: #f1f5f9;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.help-trigger:hover {
+    background: #e2e8f0;
+    color: var(--primary);
+}
+
+.card-content { padding: 35px 45px; }
+
+.modern-field { margin-bottom: 30px; }
+.modern-field label { display: block; font-weight: 600; margin-bottom: 12px; font-size: 14px; color: var(--text-main); }
+.modern-field .field-desc { display: block; font-size: 12.5px; color: var(--text-muted); margin-bottom: 10px; }
+.modern-field input, .modern-field select {
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    padding: 0 16px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: var(--text-main);
+    display: block;
+}
+
+.modern-field select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 18px;
+    padding-right: 45px;
+    cursor: pointer;
+}
+
+.modern-field input:focus, .modern-field select:focus { 
+    border-color: var(--primary); 
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(92, 60, 251, 0.1); 
+}
+
+/* Horizontal List Layout */
+.horizontal-list { display: flex; flex-direction: column; gap: 20px; }
+.horizontal-row { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 0px; 
+    padding-bottom: 15px; 
+    border-bottom: 1px solid #f1f5f9;
+}
+.horizontal-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+.row-label { width: 220px; flex-shrink: 0; padding-top: 10px; }
+.row-label label { font-weight: 600; color: var(--text-main); font-size: 14px; display: block; }
+
+.row-input { flex-grow: 1; max-width: 100%; }
+.row-input textarea {
+    width: 100%;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 14px;
+    min-height: 100px;
+    line-height: 1.6;
+    background-color: #fbfcfe;
+    transition: all 0.2s;
+}
+.row-input textarea:focus { border-color: var(--primary); outline: none; background-color: #fff; }
+
+.placeholders { font-size: 12px; color: var(--text-muted); margin-top: 8px; font-style: italic; }
+
+.channel-toggles { display: flex; gap: 40px; padding-top: 5px; }
+.switch-label { font-size: 13px; color: var(--text-main); display: flex; align-items: center; gap: 15px; font-weight: 500; }
+
+/* Switch Style */
+.switch { position: relative; display: inline-block; width: 44px; height: 24px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; }
+.slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .4s; }
+input:checked + .slider { background-color: var(--primary); }
+input:checked + .slider:before { transform: translateX(20px); }
+.slider.round { border-radius: 34px; }
+.slider.round:before { border-radius: 50%; }
+
+/* Form Footer */
+.smack-form-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: none; /* Changed since it's in the main layout now */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.smack-submit-btn {
+    background: var(--primary);
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+.smack-submit-btn:hover { background: var(--primary-hover); transform: translateY(-2px); }
+
+/* Modal Styles */
+.smack-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.2s;
+}
+
+.smack-modal {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.smack-modal-header {
+    background: #ffffff;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.smack-modal-header h3 { margin: 0; font-size: 16px; font-weight: 700; color: #0f172a; }
+
+.close-modal {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+}
+
+.close-modal:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+.smack-modal-body {
+    padding: 25px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.smack-modal-body h4 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.help-step { margin-bottom: 12px; display: flex; gap: 10px; }
+.help-step .step-num { 
+    background: var(--primary); 
+    color: white; 
+    width: 22px; 
+    height: 22px; 
+    min-width: 22px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 12px; 
+    font-weight: 600; 
+}

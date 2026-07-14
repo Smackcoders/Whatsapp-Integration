@@ -1,0 +1,475 @@
+
+#wpcontent{
+    padding-left: 0%;
+    overflow-y: hidden !important; 
+}
+
+.smack-whatsapp-header {
+    display: flex;
+    /* align-items: center; */
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.smack-whatsapp-header img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+.dashicons-format-chat{
+    padding-right: 5px;
+}
+.whatsapp-settings {
+    display: flex;
+    justify-content: center !important;
+    width :100%;
+    /* align-items: center; */
+    height: auto !important; 
+    /* padding: 20px; */
+    border-radius: 8px;
+    margin: 0 auto; 
+}
+
+
+.whatsapp-settings label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0;
+    width: 200px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.whatsapp-settings input{
+    width: 40%;
+    height: 35px;
+    padding: 6px;
+    margin: 5px 0;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.whatsapp-settings select {
+    width: 200px; 
+    height: 40px; 
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.whatsapp-settings h2 {
+
+    padding-bottom: 5px;
+    margin-top :20px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+.notice {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notice.notice-success {
+    margin-top: 80px;
+    text-align: center;
+    width: 80%;
+   
+}
+
+#success-message {
+    background: #d4edda;
+    color: #155724;
+    border-left: 3px solid #28a745;
+ 
+    width: 200px; 
+    text-align: center;
+    font-size: 12px; 
+    font-weight: normal; 
+    margin-top: 0px;
+    margin-left: 150px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 4px; 
+}
+
+
+.provider-form {
+    width: 800px; 
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    display: none;
+}
+
+
+
+.dropdown-container {
+    display: flex;          
+    align-items: center;  
+    background-color: rgb(185, 101, 101); 
+    width: 250px;     
+    gap: 10px !important;
+    margin-top: 20px;     
+    padding: 10px;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);       
+}
+
+.prodrop {
+
+    width: 100px;
+}
+
+.whatsapp-settings-button {
+    margin-top:10px !important;
+    margin-left: 5px !important;
+    background:  white;
+    width: 150px !important;
+    color: #007cba;
+    border: 1px solid #007cba !important;
+    border-radius: 3px;
+    font-size: 13px;
+   
+    z-index: 1000 !important;
+
+}
+
+
+.smack-header {
+    position: fixed; 
+    top: 30px; 
+
+    /* right: 20%; */
+  
+    width: 1200px;
+
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    padding: 20px;
+    margin-left: -38px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Ensures the content flows below the header */
+.container {
+    margin-top: 100px; /* Adjust this based on header height */
+    padding: 20px;
+}
+
+
+
+
+.header-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 15px; 
+    
+}
+
+.help-logo {
+    margin-top:105px;
+    width: 25px;
+}
+
+select {
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.selected-option {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+
+.error {
+    border: 1px solid red !important;
+}
+
+.error-message {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: spabetween;
+    z-index: 999;
+    position: relative;
+}
+
+.error-message.hide {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.notice.notice-success {
+    position: fixed;
+    top: 0; /* Below the header */
+    left: 75%;
+    transform: translateX(-10%);
+    z-index: 2000;
+    color: green;
+    font-weight: bold;
+    padding: 10px 40px 10px 10px; /* Leave space for close button */
+    background: #e6ffea;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    max-width: 250px;
+}
+
+/* .notice-dismiss {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+} */
+
+.notice-dismiss:hover {
+    color: darkgreen;
+}
+
+
+.notice.notice-error {
+    position: fixed;
+    top: 40px; /* Below the header */
+    left: 75%;
+    transform: translateX(-10%);
+    z-index: 2000;
+    color: red;
+    font-weight: bold;
+    padding: 10px 40px 10px 10px;
+    background: #ffe6e6;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    
+    min-width: 250px;
+    max-width: 400px;
+    position: fixed;
+}
+
+.notice-dismiss {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color: red;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+}
+
+.notice-dismiss:hover {
+    color: darkred;
+}
+
+
+
+.smack-whataspp-main-container {
+    display: flex;
+  
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+
+input::placeholder{
+    color:gray;
+    opacity: 0.5;
+}
+/* Main container for the entire settings page */
+.main-container { 
+    position: relative;
+    width: 82vw;
+    max-width: 1250px;
+    height: 60;
+    max-height: 70%;
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+/* Select provider container */
+.select-container {
+    display: flex;
+    align-items: center; /* Align items in a row */
+    /* gap: 15px; Space between elements */
+    width: fit-content;
+    max-width: 400px; /* Adjust width */
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f3f2f2;
+}
+
+
+.select-container label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.select-container select {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    
+    /* Adjust vertical alignment */
+    line-height: normal; /* Ensures text is not centered */
+    padding-top: 5px; /* Moves text towards the top */
+    padding-bottom: 0; /* Reduces space at the bottom */
+}
+
+.select-container select + div {
+    margin-left: 5px; /* Small space between dropdown and next element */
+}
+
+/* Provider settings forms */
+.provider-form {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.provider-form h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.provider-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.provider-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.help-section {
+   
+    position: absolute;
+    top: 20px;  /* Adjust distance from top */
+    right: 5px; /* Align to the right */
+    /* Example background */
+    color: rgb(17, 16, 17);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;/*moves it to the right */
+}
+
+/* .help-section:hover {
+    background: #ddd;
+} */
+
+
+
+
+/* Help Cards */
+
+
+.help-card h3 {
+    font-size: 14px;
+}
+
+.help-card p {
+    font-size: 12px;
+}
+
+
+.whatsapp-settings-button {
+    background: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.whatsapp-settings-button:hover {
+    background: #005f8d;
+}
+#help-button {
+    /* background-color: #000000; */
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Help Card */
+.help-card {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Close Button */
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}
+
+
+
+.provider-help {
+    display: none; /* Hide all provider settings and help sections initially */
+}

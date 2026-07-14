@@ -1,0 +1,17 @@
+{
+  "name": "zeeyes/wp-notifier",
+  "description": "WordPress WhatsApp Integration Plugin",
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "brain/monkey": "^2.6",
+    "mockery/mockery": "^1.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WpNotifier\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}

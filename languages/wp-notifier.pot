@@ -1,0 +1,124 @@
+# Copyright (C) 2024 Smackcoders
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Notifier 1.0.0\n"
+"Report-Msgid-Bugs-To: https://smackcoders.com/\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: WP-CLI 2.x\n"
+"X-Domain: wp-notifier\n"
+
+#. Plugin Name of the plugin
+msgid "WP Notifier"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.smackcoders.com/wp-notifier.html"
+msgstr ""
+
+#. Description of the plugin
+msgid "Easily send automated WhatsApp notifications to customers and admins for events like orders, signups, and status updates—boosting engagement and communication in your WordPress site."
+msgstr ""
+
+#. Author of the plugin
+msgid "Smackcoders"
+msgstr ""
+
+#. Audit Logs page title
+msgid "WhatsApp Notifications Audit Log"
+msgstr ""
+
+#. Column headers for audit log table
+msgid "Event Type"
+msgstr ""
+
+msgid "Recipient Phone"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Reasons"
+msgstr ""
+
+msgid "Provider"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "All Event Types"
+msgstr ""
+
+msgid "From:"
+msgstr ""
+
+msgid "To:"
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#. Privacy/GDPR strings
+msgid "WhatsApp Integration"
+msgstr ""
+
+msgid "WhatsApp Notifications"
+msgstr ""
+
+msgid "Scheduled WhatsApp Notifications"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Scheduled Time"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "WhatsApp personal data removed or anonymized."
+msgstr ""
+
+#. Phone validator strings
+msgid "Phone number is empty."
+msgstr ""
+
+msgid "Invalid phone number length for: %s"
+msgstr ""
+
+msgid "Phone number contains invalid characters: %s"
+msgstr ""
+
+#. Cron schedule label
+msgid "Every 5 Minutes"
+msgstr ""
+
+#. Settings saved notice
+msgid "Settings Saved Successfully!"
+msgstr ""
+
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
